@@ -1,6 +1,7 @@
 # OBD2 Data Tracker
 
 A professional CLI application designed for real-time collection, processing, and analysis of vehicle telemetry data via the OBD-II interface (ELM327).
+
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 ## 📋 Overview
