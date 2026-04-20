@@ -14,9 +14,10 @@ from obd_tracker.reporter import print_report, save_report_json
 def main():
     parser = argparse.ArgumentParser(description="OBD2 Console-Only Trip Tracker MVP")
     parser.add_argument("--port", type=str, help="Optional serial port for OBD2 adapter (e.g. /dev/ttyUSB0, COM3)")
+    parser.add_argument("--simulate", action="store_true", help="Use a mock adapter for testing")
     args = parser.parse_args()
 
-    tracker = ObdTripTracker(port=args.port)
+    tracker = ObdTripTracker(port=args.port, simulate=args.simulate)
     
     print("Initializing OBD2 Trip Tracker...")
     if not tracker.connect():
