@@ -39,12 +39,3 @@ The OBD2 Data Tracker allows for seamless trip monitoring by connecting to an OB
    ```bash
    python obd2_trip_tracker.py --simulate
    ```
-
-## 📈 Roadmap
-
--   [ ] **Web Dashboard:** Integrate Flask/Streamlit for advanced data visualization and charts.
--   [ ] **Persistence Layer:** Add SQLite support for historical trip comparison.
--   [ ] **GPS Integration:** Map routes by correlating OBD data with GPS coordinates.
-
----
-*Developed as a technical showcase for IoT and Python systems programming.*
